@@ -3,4 +3,5 @@
 relaunch: False
 rds_subnet_group_name: []
 rds_subnet_group_description: []
+rds_region: ""
 vpc_subnets: []

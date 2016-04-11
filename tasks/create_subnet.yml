@@ -3,6 +3,7 @@
   rds_subnet_group:
     state: absent
     name: "{{ rds_subnet_group_name }}"
+    region: "{{ rds_region }}"
   when: relaunch
   tags: delete
 
@@ -10,5 +11,6 @@
   rds_subnet_group:
     state: present
     name: "{{ rds_subnet_group_name }}"
+    region: "{{ rds_region }}"
     description: "{{ rds_subnet_group_description }}"
     subnets: "{{ vpc_subnets }}"
