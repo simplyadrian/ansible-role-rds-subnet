@@ -1,6 +1,5 @@
 ---
 # defaults file for ansible-role-rds-subnet
-relaunch: False
 rds_subnet_group_name: []
 rds_subnet_group_description: []
 rds_region: ""

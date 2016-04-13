@@ -1,12 +1,4 @@
 ---
-- name: Delete current subnet groups.
-  rds_subnet_group:
-    state: absent
-    name: "{{ rds_subnet_group_name }}"
-    region: "{{ rds_region }}"
-  when: relaunch
-  tags: delete
-
 - name: create a rds subnet group
   rds_subnet_group:
     state: present
